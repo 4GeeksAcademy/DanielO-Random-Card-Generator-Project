@@ -30,6 +30,13 @@ window.onload = function() {
   let middleNumber = document.querySelector(".middle-number");
   let rightSuit = document.querySelector(".right-suit");
   leftSuit.innerHTML = chosenSuit;
+  leftSuit.classList.add(
+    chosenSuit == "♦" || chosenSuit == "♥" ? "red" : "black"
+  );
+  rightSuit.classList.add(
+    chosenSuit == "♦" || chosenSuit == "♥" ? "red" : "black"
+  );
+
   middleNumber.innerHTML = chosenValue;
   rightSuit.innerHTML = chosenSuit;
   console.log(chosenSuit, chosenValue, chosenSuit);
